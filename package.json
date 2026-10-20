@@ -6,6 +6,26 @@
   "engines": {
     "vscode": "^1.140.0"
   },
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "doomscroll-while-compiling-container",
+          "title": "YT Shorts",
+          "icon": "$(play-circle)"
+        }
+      ]
+    },
+    "views": {
+      "doomscroll-while-compiling-container": [
+        {
+          "type": "webview",
+          "id": "yt-shorts-view",
+          "name": "Shorts Feed"
+        }
+      ]
+    }
+  },
   "categories": [
     "Other"
   ],
